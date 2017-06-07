@@ -1,32 +1,33 @@
 <template>
   <div class="home">
-    Home
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">{{ heading }}</h1>
+          <div class="is-two-thirds column is-paddingless">
+            <h2 class="subtitle">{{ subheading }}</h2>
+          </div>
+          <a href="" class="button is-large is-primary" id="learn">Learn more</a>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'home'
+  name: 'home',
+  data (){
+    return{
+      heading: 'Soaring to new hights',
+      subheading: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quas.'
+    }
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
+<style lang="sass">
+@import '../nq'
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>

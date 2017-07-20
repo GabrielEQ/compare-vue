@@ -9,14 +9,14 @@
       <span class="nav-toggle" v-on:click="toggleNav" v-bind:class="{'is-active': isActive}">
         <span></span>
         <span></span>
-        <span></span>
+        <span></span> 
       </span>
       <div class="nav-right nav-menu" v-bind:class="{'is-active': isActive}">
       
         <router-link to="/" class="nav-item r-item">Home</router-link>
-        <router-link to="/" class="nav-item r-item">Features</router-link>
-        <router-link to="/" class="nav-item r-item">About</router-link>
-        <router-link to="/" class="nav-item r-item">FAQ</router-link>
+        <router-link to="/features" class="nav-item r-item">Features</router-link>
+        <router-link to="/about" class="nav-item r-item">About</router-link>
+        <router-link to="/faq" class="nav-item r-item">FAQ</router-link>
 
         <div class="nav-item">
           <p class="control">
@@ -27,7 +27,6 @@
               <span>Baixe agora</span>
             </a>
           </p>
-          
         </div>
       </div>
     </div>
@@ -78,7 +77,7 @@ export default {
     color: grey
 
 .nav-left a
-  color: #FFF !important
+  color: #FFF 
   font-weght: bold
 
 .nav-item a, a.nav-item
@@ -106,4 +105,3 @@ footer
   color: #FFF
   margin-left: 10px
 </style>
-So quero ir embora to mau
